@@ -1,0 +1,25 @@
+.carouselItem {
+    height: calc(100vh - 56px);
+}
+
+.carouselItem img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.carouselCaption {
+    background-color: rgba(0, 0, 0, 0.498);
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
+.myFooter {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

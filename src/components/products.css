@@ -1,0 +1,15 @@
+.cardImage {
+    height: 300px;
+    object-fit: contain;
+
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.description-height {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

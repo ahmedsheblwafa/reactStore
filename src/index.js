@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css"
+import { ProductContextProvider } from './contexts/Productscontext';
+import { Provider } from 'react-redux';
+import { store } from "./Redux/store/store"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ProductContextProvider>
+        <App />
+      </ProductContextProvider>
+    </Provider>
   </React.StrictMode>
 );
 
